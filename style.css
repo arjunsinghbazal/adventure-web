@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+.active{
+    color: rgb(182, 11, 42);
+    text-decoration: underline;
+    font-weight: bold;
+}
+/* //nav */
+.navb{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width:100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: rgb(249, 244, 244);
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+}
+.nav-links li{
+    margin: 0 30px;
+}
+header{
+    width: 100vw;
+    height: 80vh;
+    background-image:url(./images/pexels-sebastian-palomino-1955134.jpg);
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+}
+.h-content{
+    /* margin-bottom: 15px; */
+    margin-top: 15px;
+    color: rgb(249, 244, 244);
+    text-align: center;
+}
+.h-content h2{
+    font-size: 4vmin;
+}
+.line{
+    width:150px;
+    height: 4px;
+    background: rgb(182, 11, 42);
+    margin: 10px auto;
+    border-radius: 5px;
+
+}
+.h-content h1{
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.ctn{
+    padding: 8px 14px;
+    background: rgb(182, 11, 42);
+    border-radius: 30px;
+    color: rgb(249, 244, 244);
+}
+.menu-btn{
+position: absolute;
+top: 30px;
+right: 30px;
+width: 30px;
+cursor: pointer;
+display: none;
+}
+section{
+    width: 80%;
+    margin: 40px auto;
+}
+.title{
+    text-align: center;
+    font-size: 4vmin;
+    color: rgb(58, 8, 8);
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+   /* background: lightseagreen; */
+}
+
+.row .col img{
+width: 80%;
+}
+.row .col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+.events .row{
+    margin-top: 50px;
+}
+h4{
+    font-size: 4vmin;
+    color: rgb(58, 8, 8);
+    margin: 20px auto;
+}
+p{
+    color: rgb(58, 8, 8);
+    padding: 0px 40px;
+}
+.events .ctn{
+    margin-top: 30px;
+}
+
+.explore{
+    width: 100%;
+    height: 80vh;
+    background-image: url(./images/pexels-tirachard-kumtanom-450062.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+.explore-content{
+    width: 50%;
+    padding: 50px;
+    color: rgb(249, 244, 244);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.explore-content h1{
+    font-size: 7vmin;
+}
+.explore-content .line{
+    margin-bottom: 50px;
+}
+.explore-content p{
+    color: rgb(253, 253, 253);
+    text-shadow: 1px 1px 2px pink;
+}
+.explore-content .ctn{
+    margin-top: 40px;
+
+}
+.tours .row .col{
+    width: 50%;
+}
+.tours .image-gallery{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+    width: 100%;
+    align-items: center;
+}
+.image-gallery .im{
+max-width: 100%;
+height: 100%;
+}
+.content-col h1{
+  font-size: 7vmin;
+  color: rgb(86, 85, 85);  
+}
+.content-col .line{
+    margin-left: -1px;  
+  }
+.content-col .ctn{
+margin-left: -100px;
+margin-top: 10px;
+}
+
+.footer{
+    width: 100%;
+    min-height: 90px;
+    padding: 20px 80px;
+    margin: 0;
+    background: rgb(22, 21, 21);
+    text-align: center;
+
+}
+.footer p{
+    color: white;
+    margin: 20px auto;
+}
+
+/* move */
+img{
+    transition: transform .2s ease;
+}
+img:hover{
+    transform:scale(1.1);
+    box-shadow: 2px 2px 5px gray;
+}
+
+.ctn:hover{
+    background-color: rgb(209, 186, 186);
+    color: rgb(182, 11, 42);
+}
+
+li:hover{
+    color: rgb(182, 11, 42);
+    
+}
+
+/* responsive */
+@media only screen and (max-width:750px) {
+    .menu-btn{
+        display: block;
+    }
+    .navb{
+        padding: 0;
+    }
+    .logo{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+    .nav-links{
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background:rgb(158, 145, 169);
+        margin-top: -900px;
+        transition: all 0.5s ease;
+    }
+    .mobile-menu{
+        margin-top: 0px;
+        border-bottom-left-radius: 30%;
+    }
+    .nav-links li{
+        margin: 30px auto;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .row .col{
+        margin: 20px auto;
+    }
+    .col img{
+        max-width: 90%;
+    }
+    .explore-content{
+        width:100%;
+    }
+    .tours .col{
+        width: 100%;
+    }
+    .image-gallery{
+      justify-content: center;
+      align-items: center;  
+    }
+    .image-gallery img{
+        width: 90%;
+    }
+    .footer{
+        padding: 10px;
+    }
+}
+
